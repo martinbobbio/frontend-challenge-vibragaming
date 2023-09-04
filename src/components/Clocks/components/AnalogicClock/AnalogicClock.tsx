@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { AnalogicClockStyled } from './AnalogicClock.styled';
 import dayjs from 'dayjs';
 import { adapterTimezoneEntity } from '@/adapters';
+import { addThreePoints } from '@/utils';
 
 interface AnalogicClock {
   actions: React.ReactNode;
@@ -47,6 +48,7 @@ const AnalogicClock = ({ actions, timezone }: AnalogicClock) => {
             transform: `rotateZ(${time.second() * 6}deg)`,
           }}
         />
+        <p className='label'>{addThreePoints(timezone.shortname, 18)}</p>
         <span className='twelve'>12</span>
         <span className='one'>1</span>
         <span className='two'>2</span>

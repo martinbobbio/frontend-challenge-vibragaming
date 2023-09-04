@@ -20,7 +20,9 @@ export interface adapterTimezoneOutput {
 export interface adapterTimezoneEntity {
   original: string;
   name: string;
+  shortname: string;
   group: string;
+  subgroup: string;
   date: string;
   time: string;
 }
@@ -43,7 +45,9 @@ const adaptItemProperties = (values: string[]) =>
     return {
       original: timezone,
       name: getName(timezone),
+      shortname: getShortname(timezone),
       group: getGroup(timezone),
+      subgroup: getSubgroup(timezone),
       date: getDate(timezone),
       time: getTime(timezone),
     };
@@ -61,6 +65,19 @@ const getName = (timezone: string) => {
   )
     .replace('_', ' ')
     .replace('/', ' - ');
+};
+
+const getShortname = (timezone: string) => {
+  const splitted = timezone.replace('_', ' ').split('/');
+  if (splitted[2]) return splitted[2];
+  else if (splitted[1]) return splitted[1];
+  else return timezone;
+};
+
+const getSubgroup = (timezone: string) => {
+  const splitted = timezone.replace('_', ' ').split('/');
+  if (splitted[1] && splitted[2]) return splitted[1];
+  else return '';
 };
 
 const getDate = (timezone: string) => {

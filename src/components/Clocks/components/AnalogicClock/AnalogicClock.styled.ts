@@ -126,4 +126,12 @@ export const AnalogicClockStyled = styled.div`
     top: 25%;
     left: 10%;
   }
+
+  .label {
+    color: ${({ theme }) => theme.palette.default.main};
+    font-weight: ${({ theme }) => theme.fontWeight.low};
+    position: absolute;
+    top: 65%;
+    width: 100%;
+  }
 `;

@@ -30,7 +30,7 @@ export const AnimationFadeIn = ({
 }: AnimationFadeInProps) => {
   const fadeIn = useSpring({
     opacity: 1,
-    from: { opacity: 1 },
+    from: { opacity: 0 },
     config: { duration: 750 },
     onRest: () => {
       if (onFadeInComplete) {

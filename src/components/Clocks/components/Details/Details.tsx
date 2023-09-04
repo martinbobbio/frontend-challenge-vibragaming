@@ -16,12 +16,21 @@ const Details = ({ timezone, actions }: DetailProps) => {
   return (
     <DetailsStyled>
       <Center>
-        <Name>{timezone.name}</Name>
+        <Name>{timezone.shortname || timezone.name}</Name>
         <Date>{timezone.date}</Date>
         <Time>{timezone.time}</Time>
-        <Chip label={timezone.group} color='primary' />
+
         {actions}
       </Center>
+      <Chip
+        className='group'
+        size='small'
+        label={timezone.group}
+        color='primary'
+      />
+      {timezone.subgroup && (
+        <Chip size='small' label={timezone.subgroup} color='primary' />
+      )}
     </DetailsStyled>
   );
 };

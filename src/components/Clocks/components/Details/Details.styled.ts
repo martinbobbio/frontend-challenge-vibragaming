@@ -1,7 +1,11 @@
 import { Button } from '@mui/material';
 import { styled } from 'styled-components';
 
-export const DetailsStyled = styled.div``;
+export const DetailsStyled = styled.div`
+  .group {
+    margin-right: 8px;
+  }
+`;
 
 export const Center = styled.div`
   display: flex;
