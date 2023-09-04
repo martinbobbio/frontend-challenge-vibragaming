@@ -23,7 +23,6 @@ interface ClocksProps {
 const Clocks = ({ current, onRefreshOptions }: ClocksProps) => {
   const [flippedItems, setFlippedItems] = useState(new Set());
   const [deletedItems, setDeletedItems] = useState(new Set());
-  console.log('AAA', deletedItems);
   const shouldRender = {
     content: !!current.length,
     skeletons: !current.length,
