@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/martinbobbio/frontend-challenge-vibragaming/master/src/assets/images/branding/vibragaming.jpg" width="200">
+  <img src="https://raw.githubusercontent.com/martinbobbio/frontend-challenge-vibragaming/master/src/assets/images/branding/vibragaming.png" width="200">
   <br>
   <br>
   <a href="https://frontend-challenge-vibragaming.vercel.app/">
