@@ -38,7 +38,7 @@ npm install
 npm run dev
 ```
 
-5. Open your browser and access the application at http://localhost:3000.
+5. Open your browser and access the application at http://localhost:5173.
 
 ## Libreries used
 
