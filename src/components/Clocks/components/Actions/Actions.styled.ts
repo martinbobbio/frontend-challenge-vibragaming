@@ -5,10 +5,10 @@ export const ActionsStyled = styled.div``;
 
 export const DeleteButton = styled(IconButton)`
   top: 8px;
-  right: 0px;
+  right: 8px;
 `;
 
 export const RoteteButton = styled(IconButton)`
   top: 8px;
-  right: 32px;
+  right: 40px;
 `;
