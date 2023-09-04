@@ -71,6 +71,8 @@ npm run dev
 - `npm run preview`: Builds and previews the production-ready application.
 - `npm run test`: Check unit tests.
 
+<br><br>
+
 ## Quick Start with Docker
 
 Below are the steps to get this project up and running using Docker.
