@@ -70,3 +70,23 @@ npm run dev
 - `npm run lint`: Runs ESLint to lint the source code.
 - `npm run preview`: Builds and previews the production-ready application.
 - `npm run test`: Check unit tests.
+
+## Quick Start with Docker
+
+Below are the steps to get this project up and running using Docker.
+
+### Step 1: Build the Docker Image
+
+To get started, you need to build the Docker image for this project. Open a terminal and execute the following command in the root directory of the project:
+
+```bash
+docker build -t frontend-challenge-vibragaming .
+```
+
+### Step 2: Run the Docker Container
+
+Once you have built the image, you can run a Docker container based on that image. Use the following command to run the container and expose port 5173:
+
+```bash
+docker run -p 5173:5173 frontend-challenge-vibragaming
+```
