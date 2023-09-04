@@ -32,7 +32,6 @@ export const adaptTimezoneList = ({
   list: string[];
   current: string[];
 }): adapterTimezoneOutput => {
-  console.log(orderByName(adaptItemProperties(current)));
   return {
     list: adaptItemProperties(list),
     current: orderByName(adaptItemProperties(current)),
